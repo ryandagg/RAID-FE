@@ -1813,9 +1813,17 @@ querystring@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
-raid-runner@^0.0.1:
+raid-enhanced@^0.0.1:
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/raid-runner/-/raid-runner-0.0.1.tgz#a73373db10fba2242af0f3407018b9a249415f3c"
+  resolved "https://registry.yarnpkg.com/raid-enhanced/-/raid-enhanced-0.0.1.tgz#2886b521e10db6e39d24831539dbfe115cab2ff0"
+  dependencies:
+    babel-preset-react "^6.5.0"
+    babelify "^7.3.0"
+    browserify "^16.2.3"
+    clone "^1.0.2"
+    generate-maze-by-clustering "0.0.4"
+    pathfinding "^0.4.18"
+    watchify "^3.11.1"
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"

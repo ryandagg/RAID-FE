@@ -13,26 +13,22 @@ var DropdownButton = require('react-bootstrap').DropdownButton;
 var Grid = require('react-bootstrap').Grid;
 var Row = require('react-bootstrap').Row;
 var Col = require('react-bootstrap').Col;
-var Input = require('react-bootstrap').Input;
 var Panel = require('react-bootstrap').Panel;
-var PanelGroup = require('react-bootstrap').PanelGroup;
 var Well = require('react-bootstrap').Well;
 
 // react ace
 var AceEditor = require('react-ace').default;
-var brace  = require('brace');
 require('brace/mode/javascript');
 require('brace/theme/chrome');
 require('brace/ext/language_tools'); // @see https://github.com/securingsincity/react-ace/issues/95
 
 // game components
-var GameRunner = require('raid');
-var GameConstants = require('raid');
-var ScoreEvent = require('../lib/ScoreEvent');
+var GameRunner = require('raid-enhanced').GameRunner;
+var ScoreEvent = require('raid-enhanced').ScoreEvent;
 var CompilePlayerCode = require('../lib/CompilePlayerCode');
 var TutorialVerbage = require('../lib/TutorialVerbage');
 var GAReporter = require('../lib/GAReporter');
-var UnitType = require('raid');
+var UnitType = require('raid-enhanced');
 
 // graphics
 var GraphicsConstants = require('../lib/Graphics/GraphicsConstants');
