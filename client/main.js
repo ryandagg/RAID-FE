@@ -23,12 +23,14 @@ require('brace/theme/chrome');
 require('brace/ext/language_tools'); // @see https://github.com/securingsincity/react-ace/issues/95
 
 // game components
-var GameRunner = require('raid-enhanced').GameRunner;
-var ScoreEvent = require('raid-enhanced').ScoreEvent;
+console.log('raid-enhanced: ', require('raid-enhanced/build'))
+var GameRunner = require('raid-enhanced/build').GameRunner;
+var ScoreEvent = require('raid-enhanced/build').ScoreEvent;
+var UnitType = require('raid-enhanced/build').UnitType;
+
 var CompilePlayerCode = require('../lib/CompilePlayerCode');
 var TutorialVerbage = require('../lib/TutorialVerbage');
 var GAReporter = require('../lib/GAReporter');
-var UnitType = require('raid-enhanced');
 
 // graphics
 var GraphicsConstants = require('../lib/Graphics/GraphicsConstants');

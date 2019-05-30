@@ -4,8 +4,8 @@
   "description": "Rogue AI Dungeon Client.",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t [ babelify --presets [ react ] ] client/main.js -o build.main.js",
-    "dev": "watchify -t [ babelify --presets [ react ] ] client/main.js -o build.main.js",
+    "build": "browserify -t [ babelify --presets [ react ] ] client/main.js -o build/main.js",
+    "dev": "watchify -t [ babelify --presets [ react ] ] client/main.js -o build/main.js",
     "serve": "python -m SimpleHTTPServer"
   },
   "repository": {
